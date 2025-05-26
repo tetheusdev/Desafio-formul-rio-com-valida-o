@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Desafio - Formulário com validação</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="declaracao">
+            <h3>
+                FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!
+            </h3>
+            <p>
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+            </p>
+        </div>
+        <div class="campo-preenchimento">
+            <input type="text" placeholder="Nome completo*" class="campo">
+            <span class="hidden">campo obrigatório</span>
+            <input type="text" placeholder="Email*" class="campo">
+            <span class="hidden">campo obrigatório</span>
+            <input type="text" placeholder="Telefone*" class="campo">
+            <span class="hidden">campo obrigatório</span>
+            <textarea placeholder="Mensagem*" class="campo msg"></textarea>
+            <span class="hidden">campo obrigatório</span>
+            <p>*campos obrigatórios</p>
+            <button class="btn" id="btn">Enviar</button>
+        </div>
+    </div>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

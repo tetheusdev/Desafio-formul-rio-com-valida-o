@@ -1,0 +1,96 @@
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        background-image: url(../image/bg-repeat.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .declaracao {
+        width: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #ffffff;
+        margin: 50px;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .campo-preenchimento {
+        width: 340px;
+        height: 378px;
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campo {
+        margin: 20px 20px 0px;
+        padding: 10px;
+        width: 300px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-weight: 700;
+    }
+
+    .msg {
+        height: 100px;
+        resize: none;
+    }
+
+    .campo-preenchimento p {
+        margin: 5px 15px 0px;
+        font-weight: 400;
+    }
+
+    .btn {
+        width: 300px;
+        height: 40px;
+        margin: 20px;
+        color: #ffffff;
+        background-color: #3ccc87;
+        border: none;
+        border-radius: 5px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .hidden {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .negadoS {
+        visibility: visible;
+        height: 9px;
+        position: relative;
+        left: 20px;
+        color: red;
+        font-size: 8px;
+        font-weight: 400;
+    }
+
+    .correto {
+        border: 1px solid #00C22B;
+    }
+
+    .negado {
+        border: 1px solid red;
+    }
