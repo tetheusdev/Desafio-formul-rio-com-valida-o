@@ -70,6 +70,12 @@
         border-radius: 5px;
         font-weight: 700;
         cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+        background-color: #32b576;
+        transform: scale(1.05);
     }
 
     .hidden {
@@ -79,12 +85,16 @@
 
     .negadoS {
         visibility: visible;
-        height: 9px;
+        height: 10px;
         position: relative;
         left: 20px;
         color: red;
         font-size: 8px;
         font-weight: 400;
+    }
+
+    .adaptadcao {
+        margin: 10px 20px 0px;
     }
 
     .correto {

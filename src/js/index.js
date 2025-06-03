@@ -1,26 +1,31 @@
 const campos = document.querySelectorAll('.campo');
-const textos = document.getElementsByClassName('span');
 const btn = document.getElementById('btn');
 
-btn.addEventListener('click', function() {
+btn.addEventListener('click', function () {
     let algumVazio = false;
 
-    campos.forEach(function(campo) {
+    campos.forEach(function (campo) {
         if (campo.value.trim() === '') {
             algumVazio = true;
         }
     });
 
     if (algumVazio) {
-        campos.forEach(function(campo) {
+        campos.forEach(function (campo) {
             campo.classList.add('negado');
         });
 
-        Array.from(textos).forEach(function(texto) {
+        document.querySelectorAll('.hidden').forEach(texto => {
             texto.classList.add('negadoS');
         });
+
+        campos.forEach(campo => {
+            if (!campo.classList.contains('nao-mudar')) {
+                campo.classList.add('adaptadcao')
+            }
+        })
     } else {
-        campos.forEach(function(campo) {
+        campos.forEach(function (campo) {
             campo.classList.add('correto');
         });
     }
